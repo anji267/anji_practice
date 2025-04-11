@@ -1,2 +1,0 @@
-# anji_practice
-practice
