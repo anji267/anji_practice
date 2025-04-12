@@ -27,8 +27,11 @@ int main()
 {
 	printf("enter the salary of e1: \n");
 	scanf("%d",&e1.salary);
-	printf("enter the salary of e2: \n");                                                                                                           scanf("%d",&e2.salary);
-	printf("enter the salary of e3: \n");                                                                                                           scanf("%d",&e3.salary);
+	printf("enter the salary of e2: \n");                                                                 
+	scanf("%d",&e2.salary);
+	printf("enter the salary of e3: \n");                                                                                                       
+	scanf("%d",&e3.salary);
+	printf("\n");
 	printf("the e1 salary is : %d \n",e1.salary);
 	printf("the e2 salary is : %d \n",e2.salary);
 	printf("the e3 salary is : %d \n",e3.salary);
