@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-struct Book
+struct Bk
 {
     char name[50];
     int pages;
