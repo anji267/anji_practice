@@ -1,24 +1,28 @@
 #include <stdio.h>
 #include <string.h>
 
-struct Book {
+struct Book
+{
     char name[50];
     int pages;
     char author[50];
 };
 
-struct Shirt {
+struct Shirt
+{
     char colour[20];
     int size;
     char pattern[20];
 };
 
-union Items {
+union Items
+{
     struct Book book;
     struct Shirt shirts;
 };
 
-struct store {
+struct store
+{
     int price;
     union Items items;
 };
@@ -30,7 +34,7 @@ int main()
     s.price = 500;
     strcpy(s.items.book.name, "Life of Pi");
     s.items.book.pages = 348;
-    strcpy(s.items.book.author, "Yann Martel");
+    strcpy(s.items.book.author, "A");
 
     printf("The book name is : %s\n", s.items.book.name);
     printf("The size of structure is : %lu\n", sizeof(s));
