@@ -1,28 +1,24 @@
 #include <stdio.h>
 #include <string.h>
 
-struct Book
-{
+struct Book {
     char name[50];
     int pages;
     char author[50];
 };
 
-struct Shirt
-{
+struct Shirt {
     char colour[20];
     int size;
     char pattern[20];
 };
 
-union Items
-{
+union Items {
     struct Book book;
     struct Shirt shirts;
 };
 
-struct store
-{
+struct store {
     int price;
     union Items items;
 };
