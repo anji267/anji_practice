@@ -9,8 +9,9 @@ int main()
 			printf("%d \t",((b*10)+a));
 		            
 			}
-		}
+		
 		printf("\n");
 	}
+}
 
 
