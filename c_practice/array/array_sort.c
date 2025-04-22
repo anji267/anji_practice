@@ -27,5 +27,7 @@ int main()
 	{
 		printf("%d \t",a[i]);
 	}
+	printf("the largest number is : %d \n",a[n-1]);
+	        printf("the smallest  number is : %d \n",a[0]);
 }
 
