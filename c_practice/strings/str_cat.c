@@ -1,11 +1,21 @@
 #include<stdio.h>
 #include<string.h>
+#include<stdlib.h>
 int main()
 {
-	char s1[20]="Anji";
-	char s2[20]="Adhikari";
-	strcat(s1,s2);
-	printf("The  Name Is : %s\n",s1);
+        int n;
+        printf("enter the size : \n");
+        scanf("%d",&n);
+        getchar();
+        char str1[n];
+        char str2[n];
+        printf("enter the first string(name) : \n");
+        fgets(str1,sizeof(str1),stdin);
+        str1[strcspn(str1,"\n")]='\0';
+        printf("enter the second string(name) : \n");
+        fgets(str2,sizeof(str2),stdin);
+        str2[strcspn(str2,"\n")]='\0';
+        strcat(str1," ");
+        strcat(str1,str2);
+        printf("the final string is : %s\n",str1);
 }
-
-

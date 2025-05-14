@@ -3,7 +3,7 @@
 #include<stdlib.h>
 int main()
 {
-        int n;
+        int n,found=0,i=0;
         printf("enter the size of string : \n");
         scanf("%d",&n);
         getchar();
@@ -15,15 +15,17 @@ int main()
         printf("enter the second string(name) : \n");
         fgets(str2,sizeof(str2),stdin);
         str2[strcspn(str2,"\n")]='\0';
-        int result = strcmp(str1,str2);
-        if(result==0)
+        while(str1[i]!='\0'&&str2[i]!='\0')
         {
-                printf("the strings are equal \n");
+                if(str1[i]!=str2[i])
+                {
+                        found=1;
+                        break;
+                }
+                i++;
         }
-        else if(result !=0)
-        {
-                printf("the strings are not same \n");
-        }
-
-                return 0;
+        if(found==0 && str1[i]=='\0' && str2[i]=='\0')
+                printf("the entered strings are same \n");
+        else
+                printf("the entered strings are not same \n");
 }
